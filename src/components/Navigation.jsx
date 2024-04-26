@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Context from '../contexts/Context';
-import dint from '../../public/dint.png'; 
+import dint from '../assets/images/dint.png'; 
 import './Navigation.css'
 
 const Navigation = () => {

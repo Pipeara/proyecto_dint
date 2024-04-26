@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Context from '../contexts/Context';
 import { ENDPOINT } from '../config/constans.js';
-
+import backgroundImage from '../assets/images/IMG_8416.jpg';
 const Home = () => {
   const { setDeveloper } = useContext(Context);
 
@@ -31,7 +31,7 @@ const Home = () => {
   useEffect(getDeveloperData, []);
 
   return (
-    <div className='py-5' style={{ backgroundImage: `url(src/img/IMG_8416.jpg)`, backgroundSize: 'cover', height: '100vh' }}>
+    <div className='py-5' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', height: '100vh' }}>
     <div className='card' style={{ color: 'white', fontSize: '2.5em', padding: '1rem', maxWidth: '500px', margin: '0 auto', backgroundColor: 'rgba(0, 0, 0, 0.5)', position: 'absolute', top: '20', left: '45%', transform: 'translateX(-50%)', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: '19px' }}>
       <h1>
         Welcome to <span className='fw-bold'>Dint</span>

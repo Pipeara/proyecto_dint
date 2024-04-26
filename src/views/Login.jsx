@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { ENDPOINT } from '../config/constans';
+import logoImage from '../assets/images/dint.png';
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
 const Login = () => {
@@ -45,7 +46,7 @@ const Login = () => {
   return (
     <div className="card col-12 col-sm-8 col-md-6 m-auto mt-5">
       <div className="card-body" style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: '10px' }}>
-        <img src="/src/img/dint.png" alt="Logo" style={{ position: 'absolute', top: '10px', left: '10px', height: '50px' }} />
+      <img src={logoImage} alt="Logo" style={{ position: 'absolute', top: '10px', left: '10px', height: '50px' }} />
         <form onSubmit={handleForm} style={{ padding: '20px' }}>
           <h1>Login</h1>
           <hr />
