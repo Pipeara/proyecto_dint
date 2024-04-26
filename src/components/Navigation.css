@@ -1,0 +1,18 @@
+.custom-navbar {
+    height: 60px; /* Ajusta este valor a tu gusto */
+  }
+  .nav-link-custom {
+    color: #fff !important; /* Hace el texto más blanco */
+    font-size: 1.2rem; /* Hace el texto un poco más grande */
+  }
+  .nav-link-custom:hover {
+    color: hsl(0, 8%, 76%) !important; /* Cambia el color del texto al pasar el mouse por encima */
+  }
+  .custom-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el Navbar siempre esté en la parte superior */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el padding */
+  }
